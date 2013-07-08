@@ -104,6 +104,6 @@
 	margin: 0;
 	padding: 0;
 
-References:
-http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#General_Style_Rules
-http://make.wordpress.org/core/handbook/coding-standards/css/
+- References:
+  http://google-styleguide.googlecode.com/svn/trunk/htmlcssguide.xml#General_Style_Rules
+  http://make.wordpress.org/core/handbook/coding-standards/css/
