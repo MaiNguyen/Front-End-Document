@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/* --------------------------------------------------
+	SiteName : 
+	FileName : master.css
+	Description : master style
+	Prefix: elm(=elementary)
+	
+	== TOC =========================================
+	1 : header
+	2 : main content
+		2.1 : contact page
+	3 : footer
+	4: popup
+	
+-------------------------------------------------- */
+
+html
+{
+	background: url(../images/common/footer/bg_html.gif) center 0 repeat;
+}
+
+body
+{
+	color: #333333;
+	text-align: center;
+	margin: auto;
+	font-family: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,sans-serif;
+	line-height: 1.6em;
+	background: url(../images/common/background/tile_texrure.gif) 0 0 repeat;
+}
+
+.elm-container
+{
+	position: relative;
+	background: url(../images/common/background/child_header.png) center top no-repeat;
+}
+
+
+
+/* 1 : header
+================================================== */
+
+.elm-header {
+	margin: 0;
+}
+
+.elm-header ul li {
+	width: 400px;
+	float: left;
+}
+
+
+
+/* 2 : main content
+================================================== */
+
+.elm-main-content {
+	padding-top: 100px;
+}
+
+/* 2.1 : contact page
+-------------------------------------------------- */
+
+.elm-contact-page, elm-more-infor-page {
+	background: #ccc;	
+	color: #000;
+}
+
+/* 2.2 : more infor page
+-------------------------------------------------- */
+.elm-more-infor-page {
+	background: #ccc;	
+	color: #cc0000;
+}
+
+
+
+/* 3 : footer
+================================================== */
+
+.elm-footer {
+	width: 100%;
+	height: 134px;
+	background: url(../images/common/footer/bg.png) center 0 repeat-x;
+	margin-top: 100px;
+	color: #fff;
+	line-height: 1.3em;
+}
+
+.elm-footer .footerInner
+{
+	position: relative;
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+
+
+/* 4 : popup
+-------------------------------------------------- */
+
+.elm-popup {
+	width: 500px;
+	height: 400px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	margin: -250px -200px;
+}

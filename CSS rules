@@ -1,0 +1,105 @@
+1. Use meaningful or generic ID and class names.
+   Names that are specific and reflect the purpose of the element should be preferred as these are most understandable and the least likely to change.
+
+	/* Not recommended: meaningless */
+	#yee-1901 {}
+	.button-green {}
+	.clear {}
+	
+	/* Recommended: specific */
+	#gallery {}
+	#login {}
+	
+2. Avoid qualifying ID and class names with type selectors.
+   Unless necessary (for example with helper classes), do not use element names in conjunction with IDs or classes.
+  
+  	/* Not recommended */
+	div.error {}
+	
+	/* Recommended */
+	.error {}
+	
+3. Use shorthand properties where possible.
+   Using shorthand properties is useful for code efficiency and understandability.
+  
+  	/* Not recommended */
+	.box {
+	   padding-bottom: 2em;
+	   padding-left: 1em;
+	   padding-right: 1em;
+	   padding-top: 0;
+	}
+	
+	/* Recommended */
+	.box {
+	   padding: 0 1em 2em;
+	}
+	
+4. Use 3 character hexadecimal notation where possible.
+   For color values that permit it, 3 character hexadecimal notation is shorter and more succinct.
+
+	/* Not recommended */
+	color: #eebbcc;
+	
+	/* Recommended */
+	color: #ebc;
+	
+5. Prefix selectors with an application-specific prefix (optional).
+   In large projects as well as for code that gets embedded in other projects or on external sites use prefixes (as namespaces) for ID and class names. Use short, unique identifiers followed by a dash.
+   Using namespaces helps preventing naming conflicts and can make maintenance easier, for example in search and replace operations.
+	
+	/* Recommended */
+	.adw-help {} /* AdWords */
+	
+6. Separate words in ID and class names by a hyphen.
+   Do not concatenate words and abbreviations in selectors by any characters (including none at all) other than hyphens, in order to improve understanding and scannability.
+
+	/* Not recommended: does not separate the words “demo” and “image” */
+	.errorStatus {}
+	.error_status {}
+	
+	/* Recommended */
+	#error-status {}
+
+7. Use a semicolon after every declaration.
+   End every declaration with a semicolon for consistency and extensibility reasons.
+
+	/* Not recommended */
+	.test {
+	  display: block;
+	  height: 100px
+	}
+	/* Recommended */
+	.test {
+	  display: block;
+	  height: 100px;
+	}
+	
+8. Separate selectors and declarations by new lines.
+   Always start a new line for each selector and declaration.
+   Always put a blank line (two line breaks) between rules.
+   
+	/* Not recommended */
+	h1, h2, h3 {
+	  font-weight: normal;
+	  line-height: 1.2;
+	}
+	
+	/* Recommended */
+	h1,
+	h2,
+	h3 {
+	  font-weight: normal;
+	  line-height: 1.2;
+	}
+	
+	h1 {
+	  font-weight: bold;	
+	}
+	
+9. Omit unit specification after “0” values.
+   Do not use units after 0 values unless they are required.
+
+	/* Recommended */
+	margin: 0;
+	padding: 0;
